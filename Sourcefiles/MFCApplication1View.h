@@ -50,6 +50,7 @@ public:
 	afx_msg void OnChar(UINT nChar, UINT nRepCnt, UINT nFlags);
 	afx_msg void OnElementCircle32777();
 	afx_msg void OnElementSquare32778();
+	afx_msg void OnElementAda();
 };
 
 #ifndef _DEBUG  // отладочная версия в MFCApplication1View.cpp

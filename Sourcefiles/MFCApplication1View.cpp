@@ -32,6 +32,7 @@ BEGIN_MESSAGE_MAP(CMFCApplication1View, CView)
 	ON_WM_CHAR()
 	ON_COMMAND(ID_ELEMENT_CIRCLE32777, &CMFCApplication1View::OnElementCircle32777)
 	ON_COMMAND(ID_ELEMENT_SQUARE32778, &CMFCApplication1View::OnElementSquare32778)
+	ON_COMMAND(ID_ELEMENT_ADA, &CMFCApplication1View::OnElementAda)
 END_MESSAGE_MAP()
 
 // создание/уничтожение CMFCApplication1View
@@ -195,4 +196,15 @@ void CMFCApplication1View::OnElementSquare32778()
 	dc.Rectangle(100, 100, 200, 200);
 	CMFCApplication1Doc* pDoc = GetDocument();
 	pDoc->flagFig1 = true; 
+}
+
+
+void CMFCApplication1View::OnElementAda()
+{
+	CClientDC dc(this);
+	dc.SelectObject(&pen1);
+	dc.SelectObject(&brush1);
+	dc.Pie(100, 100, 200 , 200 , 100 , 200 , 300, 400);
+	CMFCApplication1Doc* pDoc = GetDocument();
+	pDoc->flagFig2 = true;
 }

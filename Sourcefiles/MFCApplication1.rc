@@ -145,6 +145,7 @@ BEGIN
     BEGIN
         MENUITEM "Circle",                      ID_ELEMENT_CIRCLE32777
         MENUITEM "Square",                      ID_ELEMENT_SQUARE32778
+        MENUITEM "Ada",                         ID_ELEMENT_ADA
     END
 END
 
